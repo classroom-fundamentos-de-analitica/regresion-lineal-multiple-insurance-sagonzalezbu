@@ -90,7 +90,7 @@ def pregunta_03():
                 make_column_transformer(
                     (
                         OneHotEncoder(),
-                        make_column_selector(dtype_include=dtype_include),
+                        make_column_selector(dtype_include=object),
                     ),
                     remainder='passthrough',
                 ),
